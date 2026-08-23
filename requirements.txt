@@ -1,0 +1,13 @@
+# Core data analysis
+nba_api
+pandas
+
+# Notebook / interactive analysis
+jupyterlab
+ipykernel
+
+# Visualization
+matplotlib
+
+# Testing
+pytest
