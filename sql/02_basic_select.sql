@@ -3,5 +3,5 @@
 
 SELECT name, points_per_game
 FROM players
-WHERE points_per_game > 27
-ORDER BY points_per_game DESC;
+WHERE points_per_game >= 25 AND points_per_game <= 30
+ORDER BY name;
