@@ -33,5 +33,11 @@
 
 -- --------------------------------------------------
 
-INSERT INTO teams (team, city, team_name, conference)
-VALUES ('NYK', 'Jew York', 'Knicks', 'East');
+-- INSERT INTO teams (team, city, team_name, conference)
+-- VALUES ('NYK', 'Jew York', 'Knicks', 'East');
+
+-- ---------------------------------------------------
+
+UPDATE teams
+SET city = 'New York'
+WHERE team = 'NYK';
