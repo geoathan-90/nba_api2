@@ -38,6 +38,43 @@
 
 -- ---------------------------------------------------
 
-UPDATE teams
-SET city = 'New York'
-WHERE team = 'NYK';
+-- UPDATE teams
+-- SET city = 'New York'
+-- WHERE team = 'NYK';
+
+-- ----------------------------------------------------
+
+-- insert into players (name, team, points_per_game)
+-- values
+--     ('Derrick White', 'BOS', 16.8),
+--     ('Kristaps Porzingis', 'BOS', 19.7),
+--     ('Aaron Gordon', 'DEN', 15.2),
+--     ('Michael Porter Jr.', 'DEN', 18.4),
+--     ('Austin Reaves', 'LAL', 19.3),
+--     ('Rui Hachimura', 'LAL', 13.1),
+--     ('Draymond Green', 'GSW', 9.2),
+--     ('Buddy Hield', 'GSW', 12.8),
+--     ('Jalen Williams', 'OKC', 22.6),
+--     ('Luguentz Dort', 'OKC', 14.4),
+--     ('Tyrese Maxey', 'PHI', 25.7),
+--     ('Kelly Oubre Jr.', 'PHI', 15.5),
+--     ('Jalen Brunson', 'NYK', 28.8),
+--     ('Mikal Bridges', 'NYK', 18.9),
+--     ('Josh Hart', 'NYK', 13.7),
+--     ('Karl-Anthony Towns', 'NYK', 24.6),
+--     ('Damian Lillard', 'MIL', 24.9),
+--     ('Brook Lopez', 'MIL', 12.3),
+--     ('Khris Middleton', 'MIL', 14.8),
+--     ('Bobby Portis', 'MIL', 13.5);
+
+-- --------------------------------------------
+
+-- delete from players
+-- where player_id in (
+--     select player_id
+--     from players
+--     order by player_id desc
+--     limit 20
+-- );
+
+-- ---------------------------------------------

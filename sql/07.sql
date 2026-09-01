@@ -4,16 +4,14 @@
 -- .echo on
 -- .bail on
 
-SELECT 
-    COUNT(*) AS count,
-CASE
-    WHEN players.points_per_game>=30 THEN 'Elite'
-    WHEN players.points_per_game<30 AND players.points_per_game>=25 THEN 'High'
-    ELSE 'Regular'
-END AS scoring_level
-FROM players
-LEFT JOIN teams ON players.team = teams.team
--- WHERE
---     players.points_per_game>=30; 
--- ORDER BY players.points_per_game DESC;
-GROUP BY scoring_level
+-- sqlite3 data/nba.db < sql/07.sql
+
+begin transaction;
+
+update players
+set team = 'MKE'
+where team = 'MIL';
+
+select *
+from players
+where team = 'MKE';
